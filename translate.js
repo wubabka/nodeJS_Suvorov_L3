@@ -8,7 +8,6 @@ var key = 'trnsl.1.1.20161028T074855Z.3acd581d64ec49ab.1253711d6a25f3e7558b196b7
 
 http.createServer(function(req, res)  {
     var params = url.parse(`http://${req.headers.host}${req.url}`, true);
-
     var data = params.path.slice(1) || '';
 
     res.writeHead(200, {'Content-Type': 'text/html; charset=utf-8'});
